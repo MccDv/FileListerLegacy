@@ -1506,6 +1506,9 @@ Public Class FileLister
                                 Found = True
                             Else
                                 Found = SearchPathNames(ProdNode, ValueFound)
+                                If Not Found Then
+                                    Found = SearchPathNames("SOFTWARE\" & ProdNode, ValueFound)
+                                End If
                             End If
                             If Found Then
                                 If Directory.Exists(ValueFound) Then

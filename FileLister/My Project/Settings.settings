@@ -69,6 +69,8 @@
 &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
   &lt;string&gt;ULx for LabVIEW|National Instruments\LabVIEW\&lt;/string&gt;
   &lt;string&gt;ULx for LabVIEW|National Instruments\Common\Installer&lt;/string&gt;
+  &lt;string&gt;mDNS Responder|National Instruments\mDNS Responder&lt;/string&gt;
+  &lt;string&gt;Bonjour|Apple Inc.\Bonjour&lt;/string&gt;
   &lt;string&gt;Internet Explorer|SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\IEXPLORE.EXE&lt;/string&gt;
   &lt;string&gt;DirectX|NONE&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
@@ -214,6 +216,8 @@
 &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
   &lt;string&gt;Internet Explorer|Microsoft\Internet Explorer&lt;/string&gt;
   &lt;string&gt;DirectX|Microsoft\DirectX&lt;/string&gt;
+  &lt;string&gt;mDNS Responder|National Instruments\mDNS Responder&lt;/string&gt;
+  &lt;string&gt;Bonjour|Apple Inc.\Bonjour&lt;/string&gt;
   &lt;string&gt;LabVIEW Run-Time|National Instruments\LabVIEW Run-Time&lt;/string&gt;
   &lt;string&gt;LabVIEW Run-Time|National Instruments\LabVIEW Run-Time\7.0&lt;/string&gt;
   &lt;string&gt;LabVIEW Run-Time|National Instruments\LabVIEW Run-Time\7.1&lt;/string&gt;
