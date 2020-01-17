@@ -1,0 +1,420 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="MCCProgGroups" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Measurement Computing&lt;/string&gt;
+  &lt;string&gt;GPIB-488&lt;/string&gt;
+  &lt;string&gt;ComputerBoards&lt;/string&gt;
+  &lt;string&gt;Universal Library&lt;/string&gt;
+  &lt;string&gt;Measurement Computing Corp.&lt;/string&gt;
+  &lt;string&gt;DASYLab Drivers|Measurement Computing\DASYLab Drivers&lt;/string&gt;
+  &lt;string&gt;DASYLab|National Instruments\DASYLab&lt;/string&gt;
+  &lt;string&gt;DASYLab&lt;/string&gt;
+  &lt;string&gt;IOT&lt;/string&gt;
+  &lt;string&gt;IOtech&lt;/string&gt;
+  &lt;string&gt;IOtech Inc.&lt;/string&gt;
+  &lt;string&gt;SoftWIRE Technology&lt;/string&gt;
+  &lt;string&gt;SoftWIRE for Visual Studio.Net&lt;/string&gt;
+  &lt;string&gt;Cole-Parmer Instrument Company&lt;/string&gt;
+  &lt;string&gt;Cole-Parmer&lt;/string&gt;
+  &lt;string&gt;Cole Parmer&lt;/string&gt;
+  &lt;string&gt;CyberResearch&lt;/string&gt;
+  &lt;string&gt;Meilhaus Electronic&lt;/string&gt;
+  &lt;string&gt;National Instruments\MStudioVS2003&lt;/string&gt;
+  &lt;string&gt;National Instruments\MStudioVS2005&lt;/string&gt;
+  &lt;string&gt;National Instruments\NI-488.2&lt;/string&gt;
+  &lt;string&gt;Measurement Computing Corporation&lt;/string&gt;
+  &lt;string&gt;Measurement Computing &lt;/string&gt;
+  &lt;string&gt;SoftWIRE Technology LLC&lt;/string&gt;
+  &lt;string&gt;Advantech&lt;/string&gt;
+  &lt;string&gt;Omega Engineering&lt;/string&gt;
+  &lt;string&gt;Data Translation&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="PathKeyNames" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Path&lt;/string&gt;
+  &lt;string&gt;InstallDir&lt;/string&gt;
+  &lt;string&gt;RootDir&lt;/string&gt;
+  &lt;string&gt;AppRootDir&lt;/string&gt;
+  &lt;string&gt;ProductDir&lt;/string&gt;
+  &lt;string&gt;BaseDir&lt;/string&gt;
+  &lt;string&gt;CurrentPath&lt;/string&gt;
+  &lt;string&gt;GpibConfigurePath&lt;/string&gt;
+  &lt;string&gt;SuiteLocation&lt;/string&gt;
+  &lt;string&gt;Location&lt;/string&gt;
+  &lt;string&gt;NISHAREDDIR&lt;/string&gt;
+  &lt;string&gt;NISHAREDDIR64&lt;/string&gt;
+  &lt;string&gt;VsCommonDir&lt;/string&gt;
+  &lt;string&gt;JavaHome&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="VersionKeyNames" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Version&lt;/string&gt;
+  &lt;string&gt;CurrentVersion&lt;/string&gt;
+  &lt;string&gt;ProductVersion&lt;/string&gt;
+  &lt;string&gt;VersionString&lt;/string&gt;
+  &lt;string&gt;Build&lt;/string&gt;
+  &lt;string&gt;CurrentMxsVersion&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="CustomRegNodes" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;ULx for LabVIEW|National Instruments\LabVIEW\&lt;/string&gt;
+  &lt;string&gt;ULx for LabVIEW|National Instruments\Common\Installer&lt;/string&gt;
+  &lt;string&gt;Internet Explorer|SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\IEXPLORE.EXE&lt;/string&gt;
+  &lt;string&gt;DirectX|NONE&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="CustomSubDirs" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;ULx for LabVIEW|vi.lib\ULx&lt;/string&gt;
+  &lt;string&gt;ULx for LabVIEW|Examples\ULx&lt;/string&gt;
+  &lt;string&gt;ULx for LabVIEW|ULx&lt;/string&gt;
+  &lt;string&gt;ULx for LabVIEW|resource\objmgr?ULx*&lt;/string&gt;
+  &lt;string&gt;Instacal &amp;amp; Universal Library|%TEMP%\AndroidLib&lt;/string&gt;
+  &lt;string&gt;InstaCal|%TEMP%\AndroidLib&lt;/string&gt;
+  &lt;string&gt;DotNet|Shared&lt;/string&gt;
+  &lt;string&gt;DotNet|Shared\1033&lt;/string&gt;
+  &lt;string&gt;DotNet|OLClassLib&lt;/string&gt;
+  &lt;string&gt;DotNet|OLClassLib\Framework 2.0 Assemblies&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="MCCDriverReg" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;CBIUSB&lt;/string&gt;
+  &lt;string&gt;CBUL32&lt;/string&gt;
+  &lt;string&gt;cbulwdm&lt;/string&gt;
+  &lt;string&gt;gpibwdm&lt;/string&gt;
+  &lt;string&gt;ICSUSBDEV&lt;/string&gt;
+  &lt;string&gt;ICSUSBLDR&lt;/string&gt;
+  &lt;string&gt;Ntgpibdd&lt;/string&gt;
+  &lt;string&gt;pcidaqlib&lt;/string&gt;
+  &lt;string&gt;STLITE&lt;/string&gt;
+  &lt;string&gt;USB500&lt;/string&gt;
+  &lt;string&gt;NIPALK&lt;/string&gt;
+  &lt;string&gt;GpibPrtK&lt;/string&gt;
+  &lt;string&gt;NIPALUSB&lt;/string&gt;
+  &lt;string&gt;CEC488&lt;/string&gt;
+  &lt;string&gt;USBDAQLIB&lt;/string&gt;
+  &lt;string&gt;USBLDDAQLIB&lt;/string&gt;
+  &lt;string&gt;MCCUSB&lt;/string&gt;
+  &lt;string&gt;pdaq3kld&lt;/string&gt;
+  &lt;string&gt;daqx600u&lt;/string&gt;
+  &lt;string&gt;PDAQ3K&lt;/string&gt;
+  &lt;string&gt;mcsfiltr&lt;/string&gt;
+  &lt;string&gt;ni488k&lt;/string&gt;
+  &lt;string&gt;mccfwld&lt;/string&gt;
+  &lt;string&gt;mccusbfn&lt;/string&gt;
+  &lt;string&gt;adsfwld&lt;/string&gt;
+  &lt;string&gt;adsusbfn&lt;/string&gt;
+  &lt;string&gt;winusb&lt;/string&gt;
+  &lt;string&gt;MCUSB&lt;/string&gt;
+  &lt;string&gt;mcpci&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="MCCDriverNames" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;CBUL32.SYS&lt;/string&gt;
+  &lt;string&gt;cbulwdm.sys&lt;/string&gt;
+  &lt;string&gt;gpibwdm.sys&lt;/string&gt;
+  &lt;string&gt;pdaq3kld.sys&lt;/string&gt;
+  &lt;string&gt;daqx600u.sys&lt;/string&gt;
+  &lt;string&gt;USB488.sys&lt;/string&gt;
+  &lt;string&gt;USB488a.sys&lt;/string&gt;
+  &lt;string&gt;Ntgpibdd.sys&lt;/string&gt;
+  &lt;string&gt;pcidaqlib.sys&lt;/string&gt;
+  &lt;string&gt;usb500.sys&lt;/string&gt;
+  &lt;string&gt;nipalk.sys&lt;/string&gt;
+  &lt;string&gt;nipalusb.sys&lt;/string&gt;
+  &lt;string&gt;usbdaqlib.sys&lt;/string&gt;
+  &lt;string&gt;usblddaqlib.sys&lt;/string&gt;
+  &lt;string&gt;mccusb.sys&lt;/string&gt;
+  &lt;string&gt;cbiusb.sys&lt;/string&gt;
+  &lt;string&gt;GPIBPRTK.SYS&lt;/string&gt;
+  &lt;string&gt;MCSFILTR.SYS&lt;/string&gt;
+  &lt;string&gt;STLITE.SYS&lt;/string&gt;
+  &lt;string&gt;ni488k.sys&lt;/string&gt;
+  &lt;string&gt;mccfwld.sys&lt;/string&gt;
+  &lt;string&gt;mccusbfn.sys&lt;/string&gt;
+  &lt;string&gt;adsfwld.sys&lt;/string&gt;
+  &lt;string&gt;adsusbfn.sys&lt;/string&gt;
+  &lt;string&gt;WdfCoInstaller01007.dll&lt;/string&gt;
+  &lt;string&gt;WinUSBCoInstaller.dll&lt;/string&gt;
+  &lt;string&gt;winusb.sys&lt;/string&gt;
+  &lt;string&gt;mcusb.sys&lt;/string&gt;
+  &lt;string&gt;mcpci.sys&lt;/string&gt;
+  &lt;string&gt;USB_1208HS.rbf&lt;/string&gt;
+  &lt;string&gt;USB_255x.rbf&lt;/string&gt;
+  &lt;string&gt;USB_1608G.rbf&lt;/string&gt;
+  &lt;string&gt;USB_2020.bin&lt;/string&gt;
+  &lt;string&gt;USB_254X.RBF&lt;/string&gt;
+  &lt;string&gt;USB_26XX.RBF&lt;/string&gt;
+  &lt;string&gt;USB_CTR.bin&lt;/string&gt;
+  &lt;string&gt;USB_231.cfg&lt;/string&gt;
+  &lt;string&gt;USB_234.cfg&lt;/string&gt;
+  &lt;string&gt;USB_1608G_2.rbf&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="MCCDriverCategory" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;cbul32&lt;/string&gt;
+  &lt;string&gt;mccusb&lt;/string&gt;
+  &lt;string&gt;daqlib&lt;/string&gt;
+  &lt;string&gt;cbi95&lt;/string&gt;
+  &lt;string&gt;gpib488&lt;/string&gt;
+  &lt;string&gt;mccfwld&lt;/string&gt;
+  &lt;string&gt;mc7000&lt;/string&gt;
+  &lt;string&gt;daqflex&lt;/string&gt;
+  &lt;string&gt;mcusb&lt;/string&gt;
+  &lt;string&gt;mcpci&lt;/string&gt;
+  &lt;string&gt;mccusbfn&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DevelopmentProgs" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Visual Studio|Microsoft\VisualStudio&lt;/string&gt;
+  &lt;string&gt;Visual Basic|Microsoft\Visual Basic&lt;/string&gt;
+  &lt;string&gt;Delphi|Borland\Delphi&lt;/string&gt;
+  &lt;string&gt;LabVIEW|National Instruments\LabVIEW&lt;/string&gt;
+  &lt;string&gt;Measurement Studio|National Instruments\Measurement Studio&lt;/string&gt;
+  &lt;string&gt;HP Vee|Hewlett-Packard\VEE&lt;/string&gt;
+  &lt;string&gt;Android Studio|Android Studio&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="ProdNameKeys" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;ProductName&lt;/string&gt;
+  &lt;string&gt;Setup\&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="Platforms" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;SOFTWARE\Microsoft\NET Framework Setup\Full&lt;/string&gt;
+  &lt;string&gt;SOFTWARE\Microsoft\NET Framework Setup\NDP&lt;/string&gt;
+  &lt;string&gt;SOFTWARE\Microsoft\.NETCompactFramework&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="Dependencies" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Internet Explorer|Microsoft\Internet Explorer&lt;/string&gt;
+  &lt;string&gt;DirectX|Microsoft\DirectX&lt;/string&gt;
+  &lt;string&gt;LabVIEW Run-Time|National Instruments\LabVIEW Run-Time&lt;/string&gt;
+  &lt;string&gt;LabVIEW Run-Time|National Instruments\LabVIEW Run-Time\7.0&lt;/string&gt;
+  &lt;string&gt;LabVIEW Run-Time|National Instruments\LabVIEW Run-Time\7.1&lt;/string&gt;
+  &lt;string&gt;LabVIEW Run-Time|National Instruments\LabVIEW Run-Time\8.0&lt;/string&gt;
+  &lt;string&gt;LabVIEW Run-Time|National Instruments\LabVIEW Run-Time\8.2&lt;/string&gt;
+  &lt;string&gt;LabVIEW Run-Time|National Instruments\LabVIEW Run-Time\8.5&lt;/string&gt;
+  &lt;string&gt;LabVIEW Run-Time|National Instruments\LabVIEW Run-Time\8.6&lt;/string&gt;
+  &lt;string&gt;LabVIEW Run-Time|National Instruments\LabVIEW Run-Time\9.0&lt;/string&gt;
+  &lt;string&gt;Microsoft Silverlight|Microsoft\Silverlight&lt;/string&gt;
+  &lt;string&gt;Java Development Kit|JavaSoft\Java Development Kit&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="OtherMCCEntries" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Universal Library|Universal Library&lt;/string&gt;
+  &lt;string&gt;Satellite Library|Satellite Library&lt;/string&gt;
+  &lt;string&gt;UL Framework Reference|Microsoft\.NETFramework\AssemblyFolders\Measurement Computing&lt;/string&gt;
+  &lt;string&gt;SoftWIRE Framework Reference|Microsoft\.NETFramework\AssemblyFolders\SoftWIRE for Visual Studio.Net&lt;/string&gt;
+  &lt;string&gt;GPIB-488 Framework Reference|Microsoft\.NETFramework\AssemblyFolders\Measurement Computing4882&lt;/string&gt;
+  &lt;string&gt;DAQFlex Framework Reference|Microsoft\.NETFramework\AssemblyFolders\DAQFlex&lt;/string&gt;
+  &lt;string&gt;DAQLog Framework Reference|Microsoft\.NETFramework\AssemblyFolders\DAQLog&lt;/string&gt;
+  &lt;string&gt;UL Framework ReferenceEx|Microsoft\.NETFramework\v2.0.50727\AssemblyFoldersEx\Measurement Computing&lt;/string&gt;
+  &lt;string&gt;DT Framework ReferenceEx|Microsoft\.NETFramework\v2.0.50727\AssemblyFoldersEx\DT-Open Layers&lt;/string&gt;
+  &lt;string&gt;DAQFlex Framework ReferenceEx|Microsoft\.NETFramework\v2.0.50727\AssemblyFoldersEx\DAQFlex&lt;/string&gt;
+  &lt;string&gt;DAQLog Framework ReferenceEx|Microsoft\.NETFramework\v2.0.50727\AssemblyFoldersEx\DAQLog&lt;/string&gt;
+  &lt;string&gt;GPIB-488 Framework ReferenceEx|Microsoft\.NETFramework\v2.0.50727\AssemblyFoldersEx\Measurement Computing4882&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="MCCMenu" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Measurement Computing&lt;/string&gt;
+  &lt;string&gt;Universal Library&lt;/string&gt;
+  &lt;string&gt;GPIB-488&lt;/string&gt;
+  &lt;string&gt;GPIB-32 Library&lt;/string&gt;
+  &lt;string&gt;SoftWIRE Technology&lt;/string&gt;
+  &lt;string&gt;Computer Boards&lt;/string&gt;
+  &lt;string&gt;ComputerBoards&lt;/string&gt;
+  &lt;string&gt;GPIB Library&lt;/string&gt;
+  &lt;string&gt;eZ-Analyst Zonicbook&lt;/string&gt;
+  &lt;string&gt;IOtech eZ&lt;/string&gt;
+  &lt;string&gt;Cole Parmer&lt;/string&gt;
+  &lt;string&gt;ColeParmer&lt;/string&gt;
+  &lt;string&gt;National Instruments\Measurement Studio&lt;/string&gt;
+  &lt;string&gt;CyberResearch&lt;/string&gt;
+  &lt;string&gt;RedLab&lt;/string&gt;
+  &lt;string&gt;Advantech Automation&lt;/string&gt;
+  &lt;string&gt;Omega Engineering&lt;/string&gt;
+  &lt;string&gt;VI Service Network&lt;/string&gt;
+  &lt;string&gt;Universal Test Suite&lt;/string&gt;
+  &lt;string&gt;Data Translation, Inc&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="GACEntries" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Mcc4882&lt;/string&gt;
+  &lt;string&gt;MccDaq&lt;/string&gt;
+  &lt;string&gt;MccDaq.ScanComponents&lt;/string&gt;
+  &lt;string&gt;CRYPKEYCOMLib&lt;/string&gt;
+  &lt;string&gt;ISoftWIRE&lt;/string&gt;
+  &lt;string&gt;SEANCELib&lt;/string&gt;
+  &lt;string&gt;SoftWIRECommon&lt;/string&gt;
+  &lt;string&gt;DAQFlex&lt;/string&gt;
+  &lt;string&gt;MeasurementComputing.CeaContainer&lt;/string&gt;
+  &lt;string&gt;MeasurementComputing.CeaFoundation&lt;/string&gt;
+  &lt;string&gt;MeasurementComputing.HAL&lt;/string&gt;
+  &lt;string&gt;MeasurementComputing.HAL.DaqFLEX&lt;/string&gt;
+  &lt;string&gt;MeasurementComputing.HAL.DataLogger&lt;/string&gt;
+  &lt;string&gt;MeasurementComputing.HAL.DataServer&lt;/string&gt;
+  &lt;string&gt;MeasurementComputing.PropertyBag&lt;/string&gt;
+  &lt;string&gt;MeasurementComputing.SAPI&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="SharedFiles" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;DAQFlex|winusb.dll&lt;/string&gt;
+  &lt;string&gt;Instacal|cbw32.dll&lt;/string&gt;
+  &lt;string&gt;Instacal|WdfCoInstaller01007.dll&lt;/string&gt;
+  &lt;string&gt;Instacal|WinUSBCoInstaller.dll&lt;/string&gt;
+  &lt;string&gt;GPIB|gpib.ini&lt;/string&gt;
+  &lt;string&gt;GPIB|gpib-32.dll&lt;/string&gt;
+  &lt;string&gt;GPIB|gpib488.dll&lt;/string&gt;
+  &lt;string&gt;GPIB|GpibConf.dll&lt;/string&gt;
+  &lt;string&gt;GPIB|gpibenum.dll&lt;/string&gt;
+  &lt;string&gt;GPIB|gpib-vdd.dll&lt;/string&gt;
+  &lt;string&gt;GPIB|ni488.dll&lt;/string&gt;
+  &lt;string&gt;GPIB|ni488cip.dll&lt;/string&gt;
+  &lt;string&gt;GPIB|nipal32.dll&lt;/string&gt;
+  &lt;string&gt;GPIB|nipalp.dll&lt;/string&gt;
+  &lt;string&gt;GPIB|nipalsm.exe&lt;/string&gt;
+  &lt;string&gt;GPIB|nipalu.dll&lt;/string&gt;
+  &lt;string&gt;GPIB|nipalut.dll&lt;/string&gt;
+  &lt;string&gt;GPIB|nipalpg.dll&lt;/string&gt;
+  &lt;string&gt;GPIB|NIPALfw.SYS&lt;/string&gt;
+  &lt;string&gt;GPIB|ni488config.dll&lt;/string&gt;
+  &lt;string&gt;GPIB|ni488enumsvc.dll&lt;/string&gt;
+  &lt;string&gt;GPIB|drivers\ni488lock.sys&lt;/string&gt;
+  &lt;string&gt;GPIB|drivers\nipalfw.sys&lt;/string&gt;
+  &lt;string&gt;GPIB|drivers\nipalfwed.sys&lt;/string&gt;
+  &lt;string&gt;GPIB|drivers\nipalfwedl.sys&lt;/string&gt;
+  &lt;string&gt;GPIB|drivers\nipalusbed.sys&lt;/string&gt;
+  &lt;string&gt;GPIB|drivers\nipalusbedl.sys&lt;/string&gt;
+  &lt;string&gt;GPIB|drivers\nipbcfk.sys&lt;/string&gt;
+  &lt;string&gt;GPIB|ieee_32m.dll&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="ProgramSubDirs" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;GPIB-488|Utilities&lt;/string&gt;
+  &lt;string&gt;Universal Test|FileLister&lt;/string&gt;
+  &lt;string&gt;Universal Test|7-Zip&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="NIGacEntries" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;NationalInstruments.Analysis.Professional&lt;/string&gt;
+  &lt;string&gt;NationalInstruments.Common&lt;/string&gt;
+  &lt;string&gt;NationalInstruments.Common.Native&lt;/string&gt;
+  &lt;string&gt;NationalInstruments.Design&lt;/string&gt;
+  &lt;string&gt;NationalInstruments.NetworkVariable&lt;/string&gt;
+  &lt;string&gt;NationalInstruments.NetworkVariable.resources&lt;/string&gt;
+  &lt;string&gt;NationalInstruments.NI4882&lt;/string&gt;
+  &lt;string&gt;NationalInstruments.UI&lt;/string&gt;
+  &lt;string&gt;NationalInstruments.UI.Styles3D&lt;/string&gt;
+  &lt;string&gt;NationalInstruments.UI.WebForms&lt;/string&gt;
+  &lt;string&gt;NationalInstruments.UI.WindowsForms&lt;/string&gt;
+  &lt;string&gt;NationalInstruments.MeasurementStudio.CodeGeneration&lt;/string&gt;
+  &lt;string&gt;NationalInstruments.MeasurementStudio.Interfaces80&lt;/string&gt;
+  &lt;string&gt;NationalInstruments.MeasurementStudio.Wizard&lt;/string&gt;
+  &lt;string&gt;policy.7.0.NationalInstruments.Common&lt;/string&gt;
+  &lt;string&gt;policy.7.0.NationalInstruments.DotNET.Common&lt;/string&gt;
+  &lt;string&gt;policy.7.0.NationalInstruments.Interfaces&lt;/string&gt;
+  &lt;string&gt;policy.7.0.NationalInstruments.ParameterAssistant&lt;/string&gt;
+  &lt;string&gt;policy.7.0.NationalInstruments.VSDesigner&lt;/string&gt;
+  &lt;string&gt;policy.7.1.NationalInstruments.Common&lt;/string&gt;
+  &lt;string&gt;policy.7.1.Nationalinstruments.DotNET.Common&lt;/string&gt;
+  &lt;string&gt;policy.7.1.NationalInstruments.Interfaces&lt;/string&gt;
+  &lt;string&gt;policy.7.1.NationalInstruments.ParameterAssistant&lt;/string&gt;
+  &lt;string&gt;policy.7.1.NationalInstruments.VSDesigner&lt;/string&gt;
+  &lt;string&gt;policy.8.0.NationalInstruments.Common&lt;/string&gt;
+  &lt;string&gt;policy.8.1.NationalInstruments.Common&lt;/string&gt;
+  &lt;string&gt;policy.8.1.NationalInstruments.Analysis.Professional&lt;/string&gt;
+  &lt;string&gt;policy.8.1.NationalInstruments.Common.Native&lt;/string&gt;
+  &lt;string&gt;policy.8.1.NationalInstruments.NetworkVariable&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="PathsFromInstaller" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;QuickDAQ|QuickDAQ\&lt;/string&gt;
+  &lt;string&gt;QuickDAQ|Utilities\&lt;/string&gt;
+  &lt;string&gt;DotNet|Shared\&lt;/string&gt;
+  &lt;string&gt;DotNet|Shared\1033\&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DTDriverCategory" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;_Kmdf_&lt;/string&gt;
+  &lt;string&gt;_Kmd_&lt;/string&gt;
+  &lt;string&gt;_kmd_&lt;/string&gt;
+  &lt;string&gt;_km_&lt;/string&gt;
+  &lt;string&gt;_Km_&lt;/string&gt;
+  &lt;string&gt;dt9&lt;/string&gt;
+  &lt;string&gt;dt3&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DTGACEntries" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;DataTranslation.DtxDiscovery.Interop&lt;/string&gt;
+  &lt;string&gt;Dtx.DT8824.Interop&lt;/string&gt;
+  &lt;string&gt;Dtx.DT8837.Interop&lt;/string&gt;
+  &lt;string&gt;Dtx.DtxMeasurement.Interop&lt;/string&gt;
+  &lt;string&gt;OpenLayers.Base&lt;/string&gt;
+  &lt;string&gt;OpenLayers.Controls&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="DTSharedFiles" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Omni CD|graph32.dll&lt;/string&gt;
+  &lt;string&gt;Omni CD|oldaapi32.dll&lt;/string&gt;
+  &lt;string&gt;Omni CD|olmem32.dll&lt;/string&gt;
+  &lt;string&gt;Omni CD|DTAcq32.ocx&lt;/string&gt;
+  &lt;string&gt;Omni CD|DTplot32.ocx&lt;/string&gt;
+  &lt;string&gt;Omni CD|olmemsup.dll&lt;/string&gt;
+  &lt;string&gt;Omni CD|oldsp32.dll&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="ProgFilter" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;National Instruments|DASYLab&lt;/string&gt;
+  &lt;string&gt;National Instruments|ULx&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
