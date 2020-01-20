@@ -1,14 +1,14 @@
-## Utilities for Universal Test Suite programs
-**Info:** Directory that stores common utility files for Universal Test builds.
+## File lister for Universal Test Suite programs and dependancies
+**Info:** Utility that lists MCC files and system dependancies, platforms, and environments.
 
 **Author:** Measurement Computing DV
 
 ## About
-Storage for various utilities, dependencies, and common program modules. 
+For older platforms. Lister for various utilities, dependencies, and common program modules. 
 
 ### Prerequisites:
 ---------------
-Requires **Microsoft Visual Basic 6** for development.
+Requires **Microsoft Visual Studion 2005 with Visual Basic** for development.
 
 ### Cloning:
 ---------------
