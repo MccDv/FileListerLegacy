@@ -18,6 +18,7 @@ Public Class FileLister
     'Dim sAllUserPath As String = Environment.GetEnvironmentVariable("ALLUSERSPROFILE") & "\Start Menu\"
     Dim sSystemPath As String = Environment.GetFolderPath(Environment.SpecialFolder.System)
     Dim sWinPath As String = Environment.GetEnvironmentVariable("SystemRoot")
+    Dim sTestProgPath As String
     Dim sVolumeRegKey As String = "Software\Measurement Computing\Universal Test Suite"
     Dim sVolumeReg32Key As String = "Software\Wow6432Node\Measurement Computing\Universal Test Suite"
     Dim cProgGroupNodes As New NameValueCollection
@@ -465,6 +466,12 @@ Public Class FileLister
                 End If
             End If
             Include = True
+            If CurProgram.Contains("Universal Test Suite") Then
+                ItemFound = SearchPathNames(CurRegNode & _
+                    "\" & CurProgram, CodeFound)
+                If ItemFound Then sTestProgPath = CodeFound
+            End If
+
             For Each FilterParam As String In My.Settings.ProgFilter
                 Dim Filter As String, Param As String
                 Dim Splitter As Integer = FilterParam.IndexOf("|")
@@ -1746,19 +1753,20 @@ Public Class FileLister
 
     Private Sub cmdUnZip_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdUnZip.Click
 
-        Dim PathString As String
+        Dim PathString As String, ProgPathString As String
         Dim PathParam As String, FilterString As String = "*.*"
 
         If lstValNames.SelectedIndex < 0 Then Exit Sub
         PathParam = lstValNames.SelectedItem.ToString
         PathString = ParseFileFilter(PathParam, FilterString)
         PathString = Chr(34) & PathString & "Android\ul.jar" & Chr(34)
+        ProgPathString = Chr(34) & sTestProgPath & Chr(34)
         Dim BatchCmd As Process
 
         If sAndroidTempPath = "" Then
             BatchCmd = New Process
-            BatchCmd.StartInfo.FileName = "UZCmd.bat"
-            BatchCmd.StartInfo.Arguments = PathString & " AndroidLib"
+            BatchCmd.StartInfo.FileName = sTestProgPath & "UZCmd.bat"
+            BatchCmd.StartInfo.Arguments = PathString & " " & ProgPathString & " AndroidLib"
             BatchCmd.Start()
             BatchCmd.WaitForExit()
             If UnzippedAndroidDirExists() Then
