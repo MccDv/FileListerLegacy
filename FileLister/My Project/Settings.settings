@@ -39,6 +39,7 @@
 &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
   &lt;string&gt;Path&lt;/string&gt;
   &lt;string&gt;InstallDir&lt;/string&gt;
+  &lt;string&gt;InstallPath&lt;/string&gt;
   &lt;string&gt;RootDir&lt;/string&gt;
   &lt;string&gt;AppRootDir&lt;/string&gt;
   &lt;string&gt;ProductDir&lt;/string&gt;
@@ -218,6 +219,7 @@
   &lt;string&gt;DirectX|Microsoft\DirectX&lt;/string&gt;
   &lt;string&gt;mDNS Responder|National Instruments\mDNS Responder&lt;/string&gt;
   &lt;string&gt;Bonjour|Apple Inc.\Bonjour&lt;/string&gt;
+  &lt;string&gt;Git|GitForWindows&lt;/string&gt;
   &lt;string&gt;LabVIEW Run-Time|National Instruments\LabVIEW Run-Time&lt;/string&gt;
   &lt;string&gt;LabVIEW Run-Time|National Instruments\LabVIEW Run-Time\7.0&lt;/string&gt;
   &lt;string&gt;LabVIEW Run-Time|National Instruments\LabVIEW Run-Time\7.1&lt;/string&gt;

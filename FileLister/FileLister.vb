@@ -43,7 +43,8 @@ Public Class FileLister
         Dim OSVersion As String = "", OSShort As String = ""
         Dim ShortName As String = "", RegBase As String
         Dim Response As MsgBoxResult = MsgBoxResult.Cancel
-        Dim BaseName As String
+        Dim BaseName As String, PathFound As String
+        Dim ItemFound As Boolean
 
         If Me.txtOutput.TextLength > 50 Then
             Response = MsgBox("Listing has not been saved. " & _
@@ -98,6 +99,13 @@ Public Class FileLister
                 RegBase = sBaseSW64 & ModGroup
                 RegSection = " (32)"
             Next
+            If ProgGroup = "Measurement Computing" Then
+                sTestProgPath = ""
+                PathFound = ""
+                ItemFound = SearchPathNames(sBaseSW32 & ModGroup & _
+                        "\Universal Test Suite", PathFound)
+                If ItemFound Then sTestProgPath = PathFound
+            End If
         Next
         txtFileName.Clear()
         sbContents.Length = 0
@@ -466,11 +474,6 @@ Public Class FileLister
                 End If
             End If
             Include = True
-            If CurProgram.Contains("Universal Test Suite") Then
-                ItemFound = SearchPathNames(CurRegNode & _
-                    "\" & CurProgram, CodeFound)
-                If ItemFound Then sTestProgPath = CodeFound
-            End If
 
             For Each FilterParam As String In My.Settings.ProgFilter
                 Dim Filter As String, Param As String
@@ -687,27 +690,40 @@ Public Class FileLister
 
         Dim PathFound As Boolean = False
 
-        'search path names first, if not found - try default
-        For Each ValName As String In My.Settings.PathKeyNames
-            ValueFound = ValName
+        If Not ValueFound = "" Then
             If GetKeyValue(RegistryHive.LocalMachine, RegNode, ValueFound) Then
                 If Not ValueFound = "" Then
                     If ValueFound.EndsWith(";") Then
                         ValueFound = ValueFound.Remove(ValueFound.Length - 1)
                     End If
                     PathFound = True
-                    Exit For
                 End If
             End If
-        Next
+        End If
+
         If Not PathFound Then
-            ValueFound = ""
-            If GetKeyValue(RegistryHive.LocalMachine, RegNode, ValueFound) Then
-                If Not ValueFound = "" Then
-                    If ValueFound.EndsWith(";") Then
-                        ValueFound = ValueFound.Remove(ValueFound.Length - 1)
+            'search path names first, if not found - try default
+            For Each ValName As String In My.Settings.PathKeyNames
+                ValueFound = ValName
+                If GetKeyValue(RegistryHive.LocalMachine, RegNode, ValueFound) Then
+                    If Not ValueFound = "" Then
+                        If ValueFound.EndsWith(";") Then
+                            ValueFound = ValueFound.Remove(ValueFound.Length - 1)
+                        End If
+                        PathFound = True
+                        Exit For
                     End If
-                    PathFound = True
+                End If
+            Next
+            If Not PathFound Then
+                ValueFound = ""
+                If GetKeyValue(RegistryHive.LocalMachine, RegNode, ValueFound) Then
+                    If Not ValueFound = "" Then
+                        If ValueFound.EndsWith(";") Then
+                            ValueFound = ValueFound.Remove(ValueFound.Length - 1)
+                        End If
+                        PathFound = True
+                    End If
                 End If
             End If
         End If
@@ -1392,10 +1408,14 @@ Public Class FileLister
 
         Dim ReturnedRegNodes As New ArrayList
         Dim NodesReturned As Integer, ValueFound As String = ""
+        Dim vsLoc As Integer, vsEnd As Integer
         Dim ReturnedKeyNames As New ArrayList
         Dim FoundDE As Boolean = False
         Dim NodeSplit() As String
+        Dim vsBasePath As String
         Dim RevFound As String = ""
+        Dim BatchCmd As Process
+        Dim itemComplete As Boolean = False
 
         For Each de As String In My.Settings.DevelopmentProgs
             NodeSplit = de.Split("|")
@@ -1427,9 +1447,42 @@ Public Class FileLister
                                 Found = SearchPathNames(NewKeyVal, ValueFound)
                             End If
                             RevFound = "  " & rkn
+                            If (Not Found) Then
+                                'VS 2015 and higher
+                                Dim VsKeyVal = rrn & "\SxS\VS7"
+                                ValueFound = rkn
+                                Found = SearchPathNames(VsKeyVal, ValueFound)
+                            End If
+                            If Found Then
+                                If Val(rkn) > 10 Then
+                                    vsLoc = ValueFound.IndexOf("Visual Studio")
+                                    vsEnd = ValueFound.IndexOf("\", vsLoc)
+                                    vsBasePath = ValueFound.Substring(0, vsEnd + 1)
+                                    Dim verFileContents As String()
+                                    Dim batchPath As String = Chr(34) & sTestProgPath & "vsversion.bat" & Chr(34)
+                                    Dim exePath As String = Chr(34) & vsBasePath & Chr(34)
+                                    Dim outPath As String = Chr(34) & sPublicDocPath & "vsVersion.txt" & Chr(34)
+                                    If IO.File.Exists(vsBasePath & "Installer\vswhere.exe") Then
+                                        BatchCmd = New Process
+                                        BatchCmd.StartInfo.FileName = batchPath
+                                        BatchCmd.StartInfo.Arguments = exePath & " " & outPath
+                                        BatchCmd.Start()
+                                        BatchCmd.WaitForExit()
+                                    End If
+                                    Dim trimOutPath As String = outPath.Substring(1, outPath.Length - 2)
+                                    If IO.File.Exists(trimOutPath) Then
+                                        verFileContents = IO.File.ReadAllLines(trimOutPath)
+                                        itemComplete = True
+                                        For Each Item As String In verFileContents
+                                            sbContents.Append("  " & Item)
+                                        Next
+                                    End If
+                                    sbContents.Append(vbCrLf)
+                                End If
+                            End If
                         End If
                         If Found Then
-                            If Directory.Exists(ValueFound) Then
+                            If Directory.Exists(ValueFound) And (Not itemComplete) Then
                                 Dim AppName As String = GetAppName(ProdName, CurKeyVal)
                                 If AppName.Length > 0 Then
                                     Dim ProgBits As String = ""
@@ -1451,6 +1504,7 @@ Public Class FileLister
                                 End If
                             End If
                         End If
+                        itemComplete = False
                         Found = False
                     Next
                 End If
@@ -1481,27 +1535,48 @@ Public Class FileLister
                 RevFound = ""
                 Found = False
                 NodesReturned = FindSubNodes(RegistryHive.LocalMachine, rrn, ReturnedKeyNames)
-                For Each rkn As String In ReturnedKeyNames
-                    Dim CurKeyVal As String = rrn & "\" & rkn
-                    Found = SearchPathNames(CurKeyVal, ValueFound)
+                If NodesReturned = 0 Then
+                    Found = SearchPathNames(rrn, ValueFound)
                     If Found Then
                         If Directory.Exists(ValueFound) Then
-                            Dim AppName As String = GetAppName(rkn, CurKeyVal)
+                            Dim AppName As String = GetAppName(rrn, ValueFound)
+                            If AppName = "" Then AppName = DepProdName
                             If AppName.Length > 0 Then
                                 Dim ProgBits As String = ""
                                 Dim RevReturned As String = ""
-                                If SearchRevNames(CurKeyVal, RevReturned) Then
+                                If SearchRevNames(rrn, RevReturned) Then
                                     RevFound = "  ver " & RevReturned
                                 End If
                                 sbContents.AppendLine("  " & AppName & ProgBits & RevFound)
                                 FoundDE = True
-                                Found = False
-                                Exit For
                             End If
                         End If
                     End If
                     Found = False
-                Next
+                Else
+                    For Each rkn As String In ReturnedKeyNames
+                        Dim CurKeyVal As String = rrn & "\" & rkn
+                        Found = SearchPathNames(CurKeyVal, ValueFound)
+                        If Found Then
+                            If Directory.Exists(ValueFound) Then
+                                Dim AppName As String = GetAppName(rkn, CurKeyVal)
+                                If AppName.Length > 0 Then
+                                    Dim ProgBits As String = ""
+                                    Dim RevReturned As String = ""
+                                    If SearchRevNames(CurKeyVal, RevReturned) Then
+                                        RevFound = "  ver " & RevReturned
+                                    End If
+                                    sbContents.AppendLine("  " & AppName & ProgBits & RevFound)
+                                    FoundDE = True
+                                    Found = False
+                                    Exit For
+                                End If
+                            End If
+                        End If
+                        Found = False
+                    Next
+                End If
+
                 If Not Found Then
                     Dim CustomNodesReturned As New ArrayList
                     For Each rn As String In My.Settings.CustomRegNodes
