@@ -1474,10 +1474,13 @@ Public Class FileLister
                                         verFileContents = IO.File.ReadAllLines(trimOutPath)
                                         itemComplete = True
                                         For Each Item As String In verFileContents
-                                            sbContents.Append("  " & Item)
+                                            If Not (Item = "") Then
+                                                sbContents.Append("  " & Item)
+                                                FoundDE = True
+                                            End If
                                         Next
                                     End If
-                                    sbContents.Append(vbCrLf)
+                                    If FoundDE Then sbContents.Append(vbCrLf)
                                 End If
                             End If
                         End If
